@@ -5,7 +5,7 @@
   become: yes
   Task:
       
-    - name: installing the httpd ws  
+    - name: installing the httpd sw
       action: yum name=httpd state=installed
 
       name: service start to the httpd 
