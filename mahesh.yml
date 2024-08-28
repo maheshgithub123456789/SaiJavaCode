@@ -1,0 +1,15 @@
+--- this is for the pushing purpose 
+- host: all
+  user: ansible
+  connection: ssh
+  become: yes
+  Task:
+      
+    - name: installing the httpd ws  
+      action: yum name=httpd state=installed
+
+      name: service start to the httpd 
+      action: service name=httpd stat=started 
+       
+
+
